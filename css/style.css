@@ -1,6 +1,7 @@
 .border-radius-25 {
     border-radius: 25px;
 }
+
 .border-radius-15 {
     border-radius: 15px;
 }
@@ -11,5 +12,31 @@
 
 .max-with {
     max-width: 954px;
-    max-height: 650px;
+    max-height: 650px;  /* Значение для экранов ≥ 1024px */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
 }
+
+/* Экраны < 1024px */
+@media (max-width: 1023px) {
+    .max-with {
+        max-height: 506px;
+    }
+}
+
+/* Экраны < 768px */
+@media (max-width: 767px) {
+    .max-with {
+        max-height: 405px;
+    }
+}
+
+/* Экраны < 425px */
+@media (max-width: 424px) {
+    .max-with {
+        max-height: 212px;
+    }
+}
+
+
+
