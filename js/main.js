@@ -18,5 +18,5 @@ async function fetchHandler() {
 
 }
 
-button.addEventListener('click', fetchHandler)
+button.addEventListener('click', fetchHandler);
 
